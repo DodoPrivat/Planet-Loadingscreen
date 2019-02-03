@@ -1,0 +1,265 @@
+#videosList {
+ max-width: 600px; 
+  overflow: hidden;
+  position: flex;
+
+}
+.video {
+  height: 360px;
+  width: 600px;
+  position: absolute;
+  top: 2%;
+  left: 33%;
+}
+.grad{
+  background: -webkit-linear-gradient(#f442e5, #5c41f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+video::-webkit-media-controls {
+    display:none !important;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particle-net {
+  background-color: #010207;
+}  
+.loadbar
+{
+  padding: 2px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  margin-top: -25%;
+  margin-left:  37%;
+  width: 25%;
+  position: relative;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.thingy
+{
+  height: 30px;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.05));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.05));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.05));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.05));
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+.earth {
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #0077be;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(10deg);
+  overflow: hidden;
+}
+.earth__shadow {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: -65px;
+  background-image: linear-gradient(#e6e6e6 15%, #0097f1 15%, #0097f1 85%, #e6e6e6 85%);
+}
+.earth__land--1 {
+  width: 50px;
+  height: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  animation: landMotion 10s linear 0s infinite;
+}
+.earth__land--2 {
+  width: 100px;
+  height: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  position: absolute;
+  left: 50px;
+  top: 90px;
+  animation: landMotion 10s linear 0s infinite;
+}
+.earth__land--join {
+  width: 20px;
+  height: 20px;
+  background-color: aquamarine;
+  position: absolute;
+  left: 110px;
+  top: 100px;
+  animation: landMotion 10s linear 0s infinite;
+}
+.earth__land--3 {
+  width: 70px;
+  height: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  position: absolute;
+  left: 100px;
+  top: 115px;
+  animation: landMotion 10s linear 0s infinite;
+}
+.earth__land--4 {
+  width: 70px;
+  height: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  position: absolute;
+  left: 60px;
+  top: 50px;
+  animation: landMotion 10s linear 0s infinite;
+}
+.earth__land--5 {
+  width: 60px;
+  height: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  animation: landMotion 10s linear 0s infinite;
+}
+.earth__cloud--1 {
+  z-index: 5;
+  width: 50px;
+  height: 13px;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  border-radius: 15px;
+  animation: landMotion 7s linear 0s infinite reverse;
+}
+.earth__cloud--2 {
+  z-index: 5;
+  width: 30px;
+  height: 13px;
+  background-color: white;
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  border-radius: 15px;
+  animation: landMotion 8s linear 0s infinite reverse;
+}
+.earth__cloud--3 {
+  z-index: 5;
+  width: 45px;
+  height: 13px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  border-radius: 15px;
+  animation: landMotion 7s linear 0s infinite reverse;
+}
+.moon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #b7baa7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  animation: moonRotation 5s linear 0s infinite forwards;
+}
+.moon__shadow {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #E6E8D2;
+  position: absolute;
+  top: -5px;
+  left: -17px;
+}
+.moon__maria--1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  background-color: #cbceb6;
+}
+.moon__maria--2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background-color: #cbceb6;
+}
+.moon__maria--3 {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 17px;
+  background-color: #cbceb6;
+}
+
+@keyframes moonRotation {
+  0% {
+    transform: translate(-300px, -50%) rotate(10deg) scale(1);
+    z-index: 1;
+  }
+  25% {
+    transform: translate(-40px, -50%) rotate(10deg) scale(0.9);
+  }
+  50% {
+    transform: translate(260px, -50%) rotate(10deg) scale(1);
+    z-index: 1;
+  }
+  51% {
+    z-index: 6;
+  }
+  75% {
+    transform: translate(-40px, -50%) rotate(10deg) scale(1.15);
+  }
+  100% {
+    transform: translate(-300px, -50%) rotate(10deg) scale(1);
+    z-index: 1;
+  }
+}
+@keyframes landMotion {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
